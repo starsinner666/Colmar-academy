@@ -1,0 +1,408 @@
+/* Universal Styles */
+html {
+  font-size: 16px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: hsl(0, 0%, 30%);
+  background-color: hsl(0, 0%, 93%);
+  overflow-x: hidden;
+}
+.bold {
+  font-weight: 700;
+}
+.light {
+  font-weight: 300;
+  color: hsl(0, 0%, 60%);
+}
+.container {
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.banner {
+  display: flex;
+  justify-content: left;
+  padding-left: 2rem;
+}
+.bannermedia {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+}
+.bannermedia img, video {
+  width: 100%;
+  height: auto;
+  margin: 2rem 0;
+}
+.sidebar {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 40%;
+}
+.main2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1em;
+
+}
+@media only screen and (max-width: 770px) {
+  .container {
+    padding: 0;
+  }
+  .banner {
+    flex-direction: column;
+    padding: 0;
+  }
+  .bannermedia {
+    width: 100%;
+  }
+  .bannermedia img {
+    margin-top: 0;
+  }
+  .sidebar {
+    width: 100%;
+    margin: 0;
+    align-items: center;
+  }
+}
+/* HEADER */
+header {
+  height: 5rem;
+  font-size: 1.5rem;
+}
+header img {
+  height: 3.5rem;
+  width: auto;
+}
+header.container {
+  justify-content: space-between;
+}
+header nav span {
+  font-size: 1.25rem;
+  margin-right: 1rem;
+}
+header nav span:last-child {
+  margin-right: 2rem;
+}
+span.mobileheader  {
+  display: none;
+}
+@media only screen and (max-width: 770px) {
+  span.desktopheader {
+    display: none;
+  }
+  nav.desktopheader {
+    display: none;
+  }
+  span.mobileheader {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2rem;
+
+  }
+}
+
+/*"START HERE" BANNER #1*/
+.first {
+  background-color: hsl(0, 0%, 85%);
+}
+.main {
+  justify-content: center;
+}
+#slogan {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1em;
+  margin-bottom: 1.5rem;
+  width: 90%;
+}
+#nothing {
+  font-size: 1.5rem;
+  width: 80%;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1.25px;
+}
+#start {
+  font-size: 1.25rem;
+  color: hsl(0, 0%, 85%);
+  text-align: center;
+  width: 90%;
+  padding: 1rem 0;
+  background-color: hsl(0, 0%, 30%);
+}
+@media only screen and (max-width: 770px) {
+  #nothing {
+    font-size: 2rem;
+    font-weight: 500;
+    width: 90%;
+  }
+  #start {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    background-color: hsl(0, 0%, 55%);
+    letter-spacing: 1px;
+  }
+}
+/*INFORMATION BANNER #2 & #4*/
+.practice {
+  margin: 0 0 1.5rem 0;
+}
+#nothing2 {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  font-style: italic;
+  font-weight: 300;
+}
+#emmanuel {
+  font-size: .9rem;
+  margin-bottom: 2rem;
+}
+div.container.sidebar.second {
+  border-left: solid 1px hsl(0, 0%, 85%);
+  padding-left: 0;
+  margin-left: 2rem;
+}
+div.container.sidebar.second .items:first-child {
+  border-bottom: solid 4px hsl(0, 0%, 90%);
+  margin-top: 2rem;
+}
+div.container.sidebar.second .items:last-child {
+  background-color: hsl(0, 0%, 85%);
+}
+div.itemimage.orientation {
+  margin-top: 0;
+
+}
+div.itemized.orientation{
+  padding-top: 0;
+}
+.items {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.itemimage {
+  width: 37%;
+  height: auto;
+  margin: 1rem;
+}
+.itemimage img {
+  width: 100%;
+  height: auto;
+}
+.mobilepic {
+  display: none;
+}
+div.itemized {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 63%;
+  padding-top: 1rem;
+  padding-right: 1rem;
+}
+div.itemized span {
+  font-weight: 300;
+  line-height: 1.5;
+}
+div.itemized span:first-child {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+div.itemized span.readmore {
+  color: hsl(203, 100%, 66%);
+  font-weight: 500;
+}
+@media only screen and (max-width: 770px) {
+  .desktopbanner {
+    display: none;
+  }
+  div.container.sidebar.second {
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  div.container.sidebar.second .items:first-child {
+    border-bottom: none;
+  }
+  div.container.sidebar.second .items:last-child {
+    background-color: hsl(0, 0%, 93%);
+    padding-bottom: 2rem;
+  }
+  div.itemimage.orientation {
+    margin-bottom: 1rem;
+  }
+  div.itemized.orientation{
+    padding-bottom: 1rem;
+  }
+  div.itemized.campus {
+    padding-bottom: 1rem;
+  }
+  .items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: solid 2px hsl(0, 0%, 90%);
+    margin: 0 2rem;
+  }
+  div.itemimage {
+    width: 100%;
+    margin: 0;
+  }
+  .itemimage img {
+    width: 100%;
+    display: none;
+
+  }
+  img.mobilepic {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  div.itemized {
+    width: 90%;
+    padding-left: 2rem;
+  }
+
+}
+/*CLASSES BANNER #3*/
+.learning {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: hsl(0, 0%, 85%);
+}
+.classes {
+  display: flex;
+  justify-content: center;
+  padding: 0 4.5rem 0 4.5rem;
+  background-color: hsl(0, 0%, 85%);
+  line-height: 1.5;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.secondrow {
+  padding-bottom: 2rem;
+}
+.class {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+  background-color: hsl(0, 0%, 93%);
+  width: 33%;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+.classes .class:last-child {
+  margin-right: 0;
+}
+.class img {
+  width: 100%;
+  height: auto;
+}
+.class span {
+  padding-left: 1rem;
+  padding-right: 2rem;
+}
+.courses {
+  padding-bottom: .5rem;
+}
+.subject {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 1rem 0;
+}
+.mobileclasses {
+  display: none;
+}
+@media only screen and (max-width: 770px) {
+.learning {
+  background-color: hsl(0, 0%, 93%);
+}
+.classes {
+  flex-direction: column;
+  background-color: hsl(0, 0%, 93%);
+  padding: 0 1rem 1rem 1rem;
+  border-bottom: solid 2px hsl(0, 0%, 90%);
+}
+.secondrow {
+  display: none;
+}
+.class {
+  display: none;
+}
+.mobileclasses {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.mobileclasses span {
+  background-color: hsl(0, 0%, 85%);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+}
+/*THESIS EXHIBIT BANNER #4*/
+.thesis {
+  text-align: center;
+  margin-top: 2rem;
+}
+div.container.sidebar.fourth .items:first-child {
+  background-color: hsl(0, 0%, 85%);
+  margin-top: 2rem;
+}
+.bottomguy {
+  padding-bottom: 2rem;
+}
+#urban {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+#nothing3 {
+  line-height: 1.5;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+@media only screen and (max-width: 770px) {
+  .bottomguy span {
+    display: none;
+  }
+  .fourth {
+    display: none;
+  }
+}
+/*FOOTER*/
+footer {
+  font-size: .9rem;
+  padding-top: 1rem;
+  height: 4rem;
+  width: 100%;
+}
+.footer {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.details {
+  margin-right: 3rem;
+}
+.details span:first-child {
+  padding-right: 1rem;
+}
+@media only screen and (max-width: 770px) {
+  footer {
+    margin-left: 2rem;
+  }
+  .details {
+    display: none;
+  }
+}
